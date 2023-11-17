@@ -1,0 +1,93 @@
+.landing {
+    width: 100%;
+    overflow: hidden;
+}
+
+.landing-nav {
+    position: fixed;
+    width: 100%;
+    height: 4.6rem;
+    z-index: 50;
+
+    &__container {
+        padding: 0 6% 0 6%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        text-align: start;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        img {
+            width: 55px;
+        }
+
+        h4 {
+            color: #740fd3;
+            position: relative;
+            top: 4px;
+            margin: auto;
+            font-size: 21px;
+            font-weight: bolder;
+            font-family: $paypen-font;
+        }
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 28px;
+            margin: 0;
+            white-space: nowrap;
+
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+                font-weight: bold;
+                margin: auto;
+                padding: 4px;
+
+                &:hover {
+                    color: rgb(197, 197, 10);
+                }
+            }
+
+            .active {
+                color: rgb(197, 197, 10);
+            }
+
+        }
+
+        #loginButton {
+            gap: 15px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 35px;
+
+            .button {
+                padding: 8px 15px 8px 15px;
+                border: 2.5px solid #c7c4c4;
+                border-radius: 8px;
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+    }
+}

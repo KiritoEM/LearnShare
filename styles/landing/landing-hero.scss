@@ -1,0 +1,70 @@
+.landing-hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/banner.png);
+    background-size: cover;
+    padding: 0 6% 0 6%;
+
+    .hero-container {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .section-leftSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        margin-top: 1.7rem;
+
+        .title {
+            h2 {
+                font-size: 2.9em;
+                color: #3C315B;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 4.2rem;
+            }
+        }
+
+        .subtitle{
+
+            p{
+                font-size: 19px;
+                color: #555353;
+            }
+        }
+
+        .button {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+
+            button {
+                font-size: 19px;
+                border-radius: 14px;
+                color: #fff;
+                padding: 9px 40px 9px 40px;
+                background-color: $primary;
+            }
+        }
+    }
+
+    .section-rightSide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 97%;
+
+         img{
+            width: 100%;
+         }
+    }
+
+}
