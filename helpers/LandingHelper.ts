@@ -46,18 +46,18 @@ export default function LandingHelper() {
 
   const landingInfo: IlandingInfo[] = [
     {
-      image: "/info1.png",
+      image: "https://lottie.host/262ba02d-c175-448d-9940-0549e1e25dad/IcOd9JlD9M.json",
       text: `Découvrez une nouvelle approche d'apprentissage collaboratif avec
      notre système basé sur le peer learning.`,
       color: "#DDA0DD",
     },
     {
-      image: "/info2.png",
+      image: "https://lottie.host/4122308a-cbc2-420c-85db-0f44cbf6eb47/JdR4rkoOUC.json",
       text: `Libérez votre potentiel en apprenant à votre propre rythme. Notre plateforme  vous permettet de progresser à votre manière.`,
       color: "#FFDB58",
     },
     {
-      image: "/info3.png",
+      image: "https://lottie.host/731e290f-2aa4-4692-89c2-8ebaac205b26/ptJHmwQIiS.json",
       text: `Rejoignez notre communauté active où le partage d'idées et le soutien mutuel sont au cœur de chaque réussite.`,
       color: "#98FB98",
     },
