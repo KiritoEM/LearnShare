@@ -26,7 +26,7 @@ const LandingHeroDesc = (): JSX.Element => {
               autoplay={true}
               loop={true}
               src={`${landingHero.dotlottie_src}`}
-              style={{ width: "62px", height: "62px" }}
+              style={{ width: "58px", height: "58px" }}
             />
           </button>
         </div>

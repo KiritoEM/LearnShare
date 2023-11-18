@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 type InavLandingData = {
   logo: string;
   navItems: InavItems[];
@@ -32,5 +34,7 @@ export default function LandingHelper() {
     dotlottie_src: `https://lottie.host/28563c0a-d4bb-44f8-ae4c-db5763d22e86/RkfOShsQ2z.json`,
   };
 
-  return { navLandingData, landingHero };
+ 
+
+  return { navLandingData, landingHero};
 }

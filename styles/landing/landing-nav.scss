@@ -31,12 +31,13 @@
 
         img {
             width: 55px;
+            position: relative;
+            top: -4px;
         }
 
         h4 {
-            color: #740fd3;
             position: relative;
-            top: 4px;
+            top: 0;
             margin: auto;
             font-size: 21px;
             font-weight: bolder;
@@ -88,11 +89,26 @@
                 color: #fff;
             }
 
-            .button1{
+            .button1 {
                 border: 0;
                 position: relative;
                 top: 2px;
             }
         }
     }
+}
+
+//navabr Position
+.fixed {
+    background-color: $primary;
+}
+
+.relative {
+    background-color: transparent;
+}
+
+
+
+.text-primaire {
+    color: #740fd3;
 }
