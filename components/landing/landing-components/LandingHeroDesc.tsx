@@ -1,6 +1,11 @@
+import { DotLottiePlayer } from "@dotlottie/react-player";
+import "@dotlottie/react-player/dist/index.css";
+import LandingHelper from "@/helpers/LandingHelper";
 
 const LandingHeroDesc = (): JSX.Element => {
+  const { landingHero } = LandingHelper();
   return (
+    //  Landing Hero Descripiton
     <div className="col-5">
       <div className="section-leftSide">
         <div className="title">
@@ -15,7 +20,15 @@ const LandingHeroDesc = (): JSX.Element => {
         </div>
 
         <div className="button mt-4">
-          <button className="btn text-start">Commencer à apprendre</button>
+          <button className="btn text-start">
+            Commencer à apprendre{" "}
+            <DotLottiePlayer
+              autoplay={true}
+              loop={true}
+              src={`${landingHero.dotlottie_src}`}
+              style={{ width: "62px", height: "62px" }}
+            />
+          </button>
         </div>
       </div>
     </div>

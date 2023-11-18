@@ -33,7 +33,7 @@ export default function Document() {
 
         <link
           rel="icon"
-          href="/logo.webp"
+          href="/logo.png"
           type="image/png"
           sizes="16x16 32x32 64x64"
         />

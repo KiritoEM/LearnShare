@@ -17,6 +17,10 @@ export default function login(): JSX.Element {
       <main>
         <LandingHero />
       </main>
+
+      <footer>
+        
+      </footer>
     </section>
   );
 }
