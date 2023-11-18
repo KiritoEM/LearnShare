@@ -5,7 +5,7 @@ const LandingInfoContent = (): JSX.Element => {
   const { landingInfo } = LandingHelper();
   return (
     <div className="section-content mt-5">
-      <div className="row">
+      <div className="row gx-5">
         {landingInfo.map((item, index) => (
           <div className="col-4" key={index}>
             <LandingInfoCard {...item} />

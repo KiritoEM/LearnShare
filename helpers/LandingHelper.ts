@@ -53,9 +53,8 @@ export default function LandingHelper() {
       color: "#FFDB58",
     },
     {
-      image: "/info1.png",
-      text: `Découvrez une nouvelle approche d'apprentissage collaboratif avec
-     notre système basé sur le peer learning.`,
+      image: "/info3.png",
+      text: `Rejoignez notre communauté active où le partage d'idées et le soutien mutuel sont au cœur de chaque réussite.`,
       color: "#98FB98",
     },
   ];
