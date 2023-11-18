@@ -1,4 +1,4 @@
-import LandingInfoContent from "./LandingInfoContent";
+import LandingInfoContent from "./landing-components/LandingInfoContent";
 
 const LandingInfo = (): JSX.Element => {
   return (

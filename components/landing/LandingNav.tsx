@@ -25,11 +25,19 @@ const LandingNav = () => {
   const windowHeight = scrollY > 100;
 
   return (
-    <section className={`landing-nav ${windowHeight ? "fixed": "relative"}`}>
+    <section className={`landing-nav ${windowHeight ? "fixed" : "relative"}`}>
       <div className="landing-nav__container">
         {/* =================Navbar logo=============== */}
-        <div className={`landing-nav__logo ${windowHeight ? "text-light": "text-primaire"}`}>
-          <img src={navLandingData.logo} alt="" className="mx-2" />
+        <div
+          className={`landing-nav__logo ${
+            windowHeight ? "text-light" : "text-primaire"
+          }`}
+        >
+          {windowHeight ? (
+            <img src="/logo-white.png" alt="" className="mx-2" />
+          ) : (
+            <img src={navLandingData.logo} alt="" className="mx-2" />
+          )}
           <h4>LearnShare</h4>
         </div>
 

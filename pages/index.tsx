@@ -3,8 +3,9 @@ import PageHeading from "@/components/PageHeading";
 import metaTitle from "@/helpers/metaTitle";
 import LandingNav from "@/components/landing/LandingNav";
 import LandingHero from "@/components/landing/LandingHero";
-import LandingInfo from "@/components/landing/landing-components/LandingInfo";
-import LandingCitation from "@/components/landing/landing-components/LandingCitation";
+import LandingInfo from "@/components/landing/LandingInfo";
+import LandingCitation from "@/components/landing/LandingCitation";
+import LandingAppmobile from "@/components/landing/LandingAppmobile";
 
 export default function login(): JSX.Element {
   const { metaTitleHelper } = metaTitle();
@@ -16,13 +17,18 @@ export default function login(): JSX.Element {
       {/* =================landingNav=============== */}
       <LandingNav />
 
+      {/* =================landingBody=============== */}
+
       <main>
         <LandingHero />
         <LandingInfo />
         <LandingCitation />
+        <LandingAppmobile />
       </main>
 
-      <footer></footer>
+{/* =================landinFooter=============== */}
+      <footer>
+      </footer>
     </section>
   );
 }

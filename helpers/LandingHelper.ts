@@ -24,6 +24,10 @@ type IlandingInfo = {
   color: string;
 };
 
+interface IappMobile{
+  image: string
+}
+
 export default function LandingHelper() {
   const navLandingData: InavLandingData = {
     logo: "/logo.png",
@@ -59,5 +63,16 @@ export default function LandingHelper() {
     },
   ];
 
-  return { navLandingData, landingHero, landingInfo };
+  const citationData = {
+    image: "/citation.svg",
+    header: "Promouvoir l'éducation",
+    content: `"L'éducation est l'arme la plus puissante que vous pouvez utiliser pour changer le monde."`,
+    author: "Nelson Mandela",
+  };
+
+  const appMobile: IappMobile ={
+    image:"/mobileApp.png",
+  }
+
+  return { navLandingData, landingHero, landingInfo  , citationData, appMobile};
 }
