@@ -18,6 +18,12 @@ interface IlandingHero {
   dotlottie_src: string;
 }
 
+type IlandingInfo = {
+  image: string;
+  text: string;
+  color: string;
+};
+
 export default function LandingHelper() {
   const navLandingData: InavLandingData = {
     logo: "/logo.png",
@@ -34,7 +40,25 @@ export default function LandingHelper() {
     dotlottie_src: `https://lottie.host/28563c0a-d4bb-44f8-ae4c-db5763d22e86/RkfOShsQ2z.json`,
   };
 
- 
+  const landingInfo: IlandingInfo[] = [
+    {
+      image: "/info1.png",
+      text: `Découvrez une nouvelle approche d'apprentissage collaboratif avec
+     notre système basé sur le peer learning.`,
+      color: "#DDA0DD",
+    },
+    {
+      image: "/info2.png",
+      text: `Libérez votre potentiel en apprenant à votre propre rythme. Notre plateforme  vous permettet de progresser à votre manière.`,
+      color: "#FFDB58",
+    },
+    {
+      image: "/info1.png",
+      text: `Découvrez une nouvelle approche d'apprentissage collaboratif avec
+     notre système basé sur le peer learning.`,
+      color: "#98FB98",
+    },
+  ];
 
-  return { navLandingData, landingHero};
+  return { navLandingData, landingHero, landingInfo };
 }

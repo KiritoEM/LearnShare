@@ -53,7 +53,7 @@
         ul {
             display: flex;
             flex-direction: row;
-            gap: 28px;
+            gap: 32px;
             margin: 0;
             white-space: nowrap;
 
@@ -76,7 +76,7 @@
         }
 
         #loginButton {
-            gap: 11px;
+            gap: 7px;
             display: flex;
             flex-direction: row;
             margin-left: 23px;
@@ -101,13 +101,13 @@
 //navabr Position
 .fixed {
     background-color: $primary;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .relative {
     background-color: transparent;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-
 
 .text-primaire {
     color: #740fd3;
