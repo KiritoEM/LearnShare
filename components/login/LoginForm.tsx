@@ -17,18 +17,16 @@ const LoginForm = (): JSX.Element => {
           <div className="formulaire">
             <form action="post">
               <div className="form-group">
-                <label>Adresse email</label>
                 <input
                   type="email"
                   className="form-control"
                   name="email"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                   placeholder="Votre email ..."
+                  placeholder="Votre email ..."
                 />
               </div>
               <div className="form-group mt-4">
-              <label>Mot de passe</label>
                 <input
                   type="text"
                   className="form-control"
@@ -43,6 +41,14 @@ const LoginForm = (): JSX.Element => {
                 </button>
               </div>
             </form>
+          </div>
+
+          <div className="authGoogle">
+            <p>OU</p>
+            <button className="btn">
+              <img src="/authentification/icons8-google.png" className="mx-2" alt="" />
+              Continuer avec Google
+            </button>
           </div>
         </div>
       </div>

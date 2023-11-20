@@ -8,6 +8,10 @@ const LoginCover = () : JSX.Element => {
                  <div className="subtitle">
                      <h6>Un nouveau système innovant pour l' amélioration de l' éducation</h6>
                  </div>
+
+                 <div className="button">
+                     <button className="btn">Créer un compte</button>
+                 </div>
              </div>
         </div>
     );
