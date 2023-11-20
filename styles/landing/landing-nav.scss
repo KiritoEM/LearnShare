@@ -1,7 +1,7 @@
 .landing {
     width: 100%;
     overflow: hidden;
-    background-color: #ece7e7ee;
+    background-color: #dddadaee;
 }
 
 .landing-nav {
@@ -102,12 +102,12 @@
 //navabr Position
 .fixed {
     background-color: $primary;
-    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.12s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .relative {
     background-color: transparent;
-    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.12s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .text-primaire {
