@@ -2,7 +2,8 @@ interface IlandingTitle{
   landingTitle: string,
   loginTitle: string,
   signupTitle:string,
-  sendCodeTitle: string
+  sendCodeTitle: string,
+  signupFinalTitle: string
 }
 
 export default function metaHelper() {
@@ -10,7 +11,8 @@ export default function metaHelper() {
      landingTitle:"Bienvenue sur LearnShare",
      loginTitle:"LearnShare - Se connecter",
      signupTitle:"LearnShare - Créer un compte",
-     sendCodeTitle: "Entrer le code à 6 chiffres"
+     sendCodeTitle: "Entrer le code à 6 chiffres",
+     signupFinalTitle:"Finalisez votre inscription"
    }
 
    return {metaTitleHelper}

@@ -8,7 +8,12 @@
     position: fixed;
     width: 100%;
     height: 4.6rem;
-    z-index: 50;
+    z-index: 70;
+
+     @include screen(small){
+        background-color: $primary;
+        box-shadow: 0 7px 8px rgba(61, 60, 60, 0.651);
+     }
 
     &__container {
         padding: 0 6% 0 6%;
@@ -97,19 +102,135 @@
             }
         }
     }
+
+}
+
+.nav-responsive {
+    position: fixed;
+    top: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: $primary;
+    overflow: hidden;
+    z-index: 50;
+    text-align: center;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 10%;
+        white-space: nowrap;
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            margin: auto;
+
+            &:hover {
+                color: rgb(197, 197, 10);
+            }
+        }
+
+        .active {
+            color: rgb(197, 197, 10);
+        }
+
+    }
+
+    #loginButton {
+        gap: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 14px;
+        margin-left: 5.4%;
+
+        .button {
+            padding: 8px 15px 8px 15px;
+            border: 2.5px solid #c7c4c4;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .button1 {
+            border: 0;
+        }
+    }
+
+    .desc{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2.5rem;
+
+        .line{
+            width: 90%;
+            border-radius: 25px;
+            height: 1.4px;
+            background-color: #aaa;
+        }
+
+        p{
+            color: #fff;
+            width: 88%;
+            margin-top: 1rem;
+            text-align: start;
+        }
+    }
+}
+
+.menu-button{
+    display: flex;
+    align-items: center;
+
+    .icon{
+        font-size: 22px;
+        border: 7px solid #a095aa;
+        padding: 11px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
 }
 
 //navabr Position
 .fixed {
     background-color: $primary;
     transition: 0.12s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 0 7px 8px rgba(61, 60, 60, 0.651);
 }
 
 .relative {
     background-color: transparent;
     transition: 0.12s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+     @include screen (small){
+        background-color: $primary;
+     }
 }
 
 .text-primaire {
     color: #740fd3;
+
+    @include screen (small){
+        color: #fff;
+     }
+}
+
+.open-menu{
+    width: 100%;
+    transition: .18s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.close-menu{
+    width: 0;
+    transition: .18s cubic-bezier(0.075, 0.82, 0.165, 1);
 }

@@ -1,21 +1,23 @@
 import LandingHelper from "@/helpers/LandingHelper";
 import { useRouter } from "next/router";
+import { useNav } from "@/helpers/hooks/useNav";
 
-const LandingNavItems = (): JSX.Element => {
-    //navHelper importation
+const LandingNavResponsive = (): JSX.Element => {
+  //navHelper importation
   const { navLandingData } = LandingHelper();
+
+  const { openMenu, openOverlay } = useNav();
 
   //routing
   const router = useRouter();
 
   //array for navbar auth buttons
   const loginButton = [
-    { label: "S' inscrire", href: "" , class:"button1"},
+    { label: "S' inscrire", href: "", class: "button1" },
     { label: "Se connecter", href: "" },
   ];
-
   return (
-    <div className="landing-nav__items d-none d-lg-flex">
+    <div className={`nav-responsive d-lg-none ${openMenu ? "open-menu" : "close-menu"}`}>
       <ul>
         {/* map navItem array */}
         {navLandingData.navItems.map((items, index) => (
@@ -38,8 +40,17 @@ const LandingNavItems = (): JSX.Element => {
           </div>
         ))}
       </div>
+
+      <div className="desc">
+        <div className="line"></div>
+
+        <p>
+          Optez pour un avenir meilleur , pour une éducation accessible avec
+          notre application
+        </p>
+      </div>
     </div>
   );
 };
 
-export default LandingNavItems;
+export default LandingNavResponsive;

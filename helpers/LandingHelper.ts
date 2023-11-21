@@ -33,7 +33,7 @@ export default function LandingHelper() {
     logo: "/logo.png",
     navItems: [
       { label: "Accueil", href: "/" },
-      { label: "Actualité", href: "" },
+      { label: "Explorer", href: "" },
       { label: "Découvrir", href: "" },
       { label: "Contact", href: "" },
     ],

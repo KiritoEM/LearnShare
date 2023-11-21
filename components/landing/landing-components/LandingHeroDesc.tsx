@@ -6,7 +6,7 @@ const LandingHeroDesc = (): JSX.Element => {
   const { landingHero } = LandingHelper();
   return (
     //  Landing Hero Descripiton
-    <div className="col-5">
+    <div className="col-md-5">
       <div className="section-leftSide">
         <div className="title">
           <h2>Un Accès Universel à l'Éducation</h2>

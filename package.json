@@ -11,6 +11,9 @@
   "dependencies": {
     "@dotlottie/player-component": "^2.7.2",
     "@dotlottie/react-player": "^1.6.5",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.6.2",
     "next": "14.0.3",
     "react": "^18",

@@ -1,10 +1,16 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import LandingNavItems from "./landing-components/LandingNavItems";
 import LandingHelper from "@/helpers/LandingHelper";
+import LandingNavResponsive from "./landing-components/LandingNavResponsive";
+import MenuButton from "./landing-components/MenuButton";
+import { useNav } from "@/helpers/hooks/useNav";
 
 const LandingNav = () => {
   //navHelper importation
   const { navLandingData } = LandingHelper();
+
+  //menutoogle importation
+  const { menuToogle } = useNav();
 
   //hooks for scrolling observer
   const [scrollY, setScrollY] = useState<number>(0);
@@ -25,26 +31,48 @@ const LandingNav = () => {
   const windowHeight = scrollY > 100;
 
   return (
-    <section className={`landing-nav ${windowHeight ? "fixed" : "relative"}`}>
-      <div className="landing-nav__container">
-        {/* =================Navbar logo=============== */}
-        <div
-          className={`landing-nav__logo ${
-            windowHeight ? "text-light" : "text-primaire"
-          }`}
-        >
-          {windowHeight ? (
-            <img src="/logo-white.png" alt="" className="mx-2" />
-          ) : (
-            <img src={navLandingData.logo} alt="" className="mx-2" />
-          )}
-          <h4>LearnShare</h4>
+    <Fragment>
+      <section className={`landing-nav ${windowHeight ? "fixed" : "relative"}`}>
+        <div className="landing-nav__container">
+          {/* =================Navbar logo=============== */}
+          <div
+            className={`landing-nav__logo ${
+              windowHeight ? "text-light" : "text-primaire"
+            }`}
+          >
+            {windowHeight ? (
+              <img
+                src="/logo-white.png"
+                alt=""
+                className="mx-2 d-none d-lg-flex"
+              />
+            ) : (
+              <img
+                src={navLandingData.logo}
+                alt=""
+                className="mx-2 d-none d-lg-flex"
+              />
+            )}
+
+            <img src="/logo-white.png" alt="" className="mx-2 d-lg-none" />
+            <h4>LearnShare</h4>
+          </div>
+
+          {/* =================Navbar item=============== */}
+          <LandingNavItems />
+
+          <MenuButton
+            action={() => {
+              menuToogle();
+            }}
+          />
         </div>
 
-        {/* =================Navbar item=============== */}
-        <LandingNavItems />
-      </div>
-    </section>
+        {/* =================Navbar for responsive=============== */}
+      </section>
+
+      <LandingNavResponsive />
+    </Fragment>
   );
 };
 
