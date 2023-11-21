@@ -5,6 +5,7 @@
     padding-top: 0.8rem;
     padding-bottom: 0.5rem;
     background-color: rgba(0, 0, 0, 0.842);
+    box-shadow: 0 -7px 8px rgba(61, 60, 60, 0.452);
 
     @include screen(small){
       margin-top: 1rem;

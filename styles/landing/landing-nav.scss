@@ -12,7 +12,7 @@
 
      @include screen(small){
         background-color: $primary;
-        box-shadow: 0 7px 8px rgba(61, 60, 60, 0.651);
+        box-shadow: 0 7px 8px rgba(61, 60, 60, 0.452);
      }
 
     &__container {
@@ -208,10 +208,15 @@
 
     .icon{
         font-size: 22px;
-        border: 7px solid #a095aa;
+        border: 6px solid #a095aa;
         padding: 11px;
         background-color: #fff;
         border-radius: 50%;
+
+        &:focus {
+            transform: scale(1.2); 
+            outline: none;
+        }
     }
 }
 
@@ -219,7 +224,7 @@
 .fixed {
     background-color: $primary;
     transition: 0.12s cubic-bezier(0.075, 0.82, 0.165, 1);
-    box-shadow: 0 7px 8px rgba(61, 60, 60, 0.651);
+    box-shadow: 0 7px 8px rgba(61, 60, 60, 0.452);
 }
 
 .relative {

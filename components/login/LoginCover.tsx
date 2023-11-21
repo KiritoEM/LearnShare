@@ -1,6 +1,6 @@
 const LoginCover = () : JSX.Element => {
     return (
-        <div className="col-6">
+        <div className="col-md-5 col-lg-6 d-none d-md-flex">
              <div className="section-cover">
                  <div className="title">
                       <h2>L' éducation autrement avec <span>LearnShare</span></h2>
