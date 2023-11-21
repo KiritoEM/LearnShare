@@ -17,6 +17,26 @@
         border-radius: 15px;
         padding: 40px 50px 40px 50px;
 
+        @include screen(small) {
+            width: 92%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px 24px 40px 24px;
+        }
+
+        @include screen(medium) {
+            width: 56%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px 24px 40px 24px;
+        }
+
 
         .logo {
             display: flex;
@@ -45,9 +65,9 @@
                 font-size: 18px;
                 color: $color2;
 
-                 b{
+                b {
                     font-size: 16.5px;
-                 }
+                }
             }
         }
 

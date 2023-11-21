@@ -205,18 +205,14 @@
 .menu-button{
     display: flex;
     align-items: center;
+    transition: transform 0.3s ease;
 
-    .icon{
+    .icon {
         font-size: 22px;
         border: 6px solid #a095aa;
         padding: 11px;
         background-color: #fff;
         border-radius: 50%;
-
-        &:focus {
-            transform: scale(1.2); 
-            outline: none;
-        }
     }
 }
 
