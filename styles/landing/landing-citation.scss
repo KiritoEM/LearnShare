@@ -9,6 +9,10 @@
             padding: 1.6rem 6% 0rem 6%;
         }
 
+        @include screen-x(1024px , 1150px ){
+            padding: 0 4% 0 4%;
+        }
+
         .section-cover {
             width: 100%;
             height: 100%;
