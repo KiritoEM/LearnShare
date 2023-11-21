@@ -11,7 +11,7 @@ const LandingHero = (): JSX.Element => {
           <LandingHeroDesc />
 
           {/* =================Landing Hero cover=============== */}
-          <div className="col-md-7">
+          <div className="col-md-6 col-lg-7">
             <div className="section-rightSide">
               <img src={landingHero.img} alt="" />
             </div>

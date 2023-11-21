@@ -6,8 +6,8 @@ const LandingCitation = (): JSX.Element => {
   return (
     <section className="landing-citation">
       <div className="landing-citation__container">
-        <div className="row gx-5">
-          <div className="col-7">
+        <div className="row gx-5 gy-4 gy-md-2">
+          <div className="col-md-5 col-lg-7">
             <div className="section-cover">
               <img src={citationData.image} alt="" />
             </div>

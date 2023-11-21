@@ -6,6 +6,10 @@
     padding-bottom: 0.5rem;
     background-color: rgba(0, 0, 0, 0.842);
 
+    @include screen(small){
+      margin-top: 1rem;
+    }
+
      h5{
         color: #fff;
         font-weight: bold;

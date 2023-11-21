@@ -8,7 +8,17 @@
 
     @include screen(small){
         background-position: right center;
+        position: relative;
+        top: 4.5rem;
+        height: 110vh;
      }
+
+     @include screen(medium){
+        height: 115vh;
+        overflow: hidden;
+        position: relative;
+        top: 4.5rem;
+    }
 
     .hero-container {
         width: 100%;
@@ -24,6 +34,16 @@
         width: 100%;
         margin-top: 1.7rem;
 
+        @include screen(small){
+            height: 100%;
+            margin-top: 3rem;
+        }
+
+        @include screen(medium){
+            height: 75vh;
+            margin-top: 3rem;
+        }
+
         .title {
             h2 {
                 font-size: 3em;
@@ -36,6 +56,11 @@
                     color: #fff;
                     font-size: 32px;
                     line-height: 3rem;
+                }
+
+                @include screen(medium){
+                    font-size: 33px;
+                    line-height: 3.6rem;
                 }
             }
         }
@@ -76,6 +101,13 @@
                     padding: 0;
                     width: 100%;
                 }
+
+                  @include screen(medium){
+                    font-size: 18px;
+                    white-space: nowrap;
+                    padding: 0;
+                    width: 100%;
+                }
             }
         }
     }
@@ -87,6 +119,10 @@
         justify-content: center;
         height: 100%;
         width: 97%;
+
+        @include screen(small){
+            margin-top: 3rem;
+        }
 
         img {
             width: 100%;

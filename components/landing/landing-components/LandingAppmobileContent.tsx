@@ -9,7 +9,7 @@ const LandingAppmobileContent = (): JSX.Element => {
   ];
 
   return (
-    <div className="col-7">
+    <div className="col-md-7">
       <div className="section-description">
         <h2>
           Bientôt LearnShare disponible sur tous les plateformes{" "}

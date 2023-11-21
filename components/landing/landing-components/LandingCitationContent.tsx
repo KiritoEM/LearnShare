@@ -12,7 +12,7 @@ const LandingCitationContent: React.FC<IcitationProps> = ({
   author,
 }): JSX.Element => {
   return (
-    <div className="col-5">
+    <div className="col-md-7 col-lg-5">
       <div className="section-description">
         <div className="citation-header">
           <h2>{header}</h2>

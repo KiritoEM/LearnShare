@@ -10,7 +10,7 @@ const LandingNav = () => {
   const { navLandingData } = LandingHelper();
 
   //menutoogle importation
-  const { menuToogle } = useNav();
+  const { menuToogle, openOverlay } = useNav();
 
   //hooks for scrolling observer
   const [scrollY, setScrollY] = useState<number>(0);
@@ -72,6 +72,8 @@ const LandingNav = () => {
       </section>
 
       <LandingNavResponsive />
+
+      {openOverlay && <div className="overlay"></div>}
     </Fragment>
   );
 };

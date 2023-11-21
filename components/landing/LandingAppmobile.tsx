@@ -7,7 +7,7 @@ const LandingAppmobile = (): JSX.Element => {
     <div className="app-mobile">
       <div className="app-mobile__container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-5 d-none d-md-flex">
             <div className="section-app">
               <img src={appMobile.image} alt="" />
             </div>

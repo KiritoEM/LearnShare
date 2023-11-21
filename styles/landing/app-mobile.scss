@@ -5,11 +5,23 @@
     padding-top: 3rem;
     margin-top: 1.4rem;
 
+    @include screen(small){
+      height: 100%;
+    }
+
      &__container{
         width: 100%;
         height: 100%;
         padding: 3rem 12% 3rem 12%;
         background-color: $primary;
+
+        @include screen(small){
+         padding: 3rem 7% 3rem 7%;
+       }
+
+       @include screen(medium){
+         padding: 3rem 6% 3rem 6%;
+       }
 
          .section-app{
             width: 80%;
@@ -31,6 +43,14 @@
                 font-weight: bold;
                 font-size: 1.9em;
 
+                @include screen(small){
+                  font-size: 1.6em;
+                }
+
+                @include screen(medium){
+                  font-size: 1.7em;
+                }
+
                  span{
                     color: rgb(223, 172, 6);
                  }
@@ -41,6 +61,7 @@
                  display: flex;
                  flex-direction: row;
                  gap: 22px;
+
 
                   .item{
 

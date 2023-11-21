@@ -2,8 +2,23 @@
     width: 100%;
     overflow: hidden;
 
+    @include screen(small){
+        margin-top: 5rem;
+    }
+
+    @include screen(medium){
+        margin-top: -7rem;
+        z-index: 70;
+        height: 100%;
+        background-color: #dddadaee;
+    }
+
     &__container {
         padding: 2rem 6% 3rem 6%;
+        
+        @include screen(medium){
+            padding: 2rem 6% 5rem 6%;
+        }
 
         .section-header {
 
@@ -16,6 +31,14 @@
                 color: #555353;
                 font-size: 18px;
                 width: 50%;
+
+                @include screen(small){
+                    width: 100%;
+                }
+
+                @include screen(medium){
+                    width: 90%;
+                }
             }
         }
 
