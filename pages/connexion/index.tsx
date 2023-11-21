@@ -9,7 +9,7 @@ const login = (): JSX.Element => {
   return (
     <Fragment>
       <PageHeading title={metaTitleHelper.loginTitle} />
-      <div className="login">
+      <section className="login">
         <div className="login__container">
           <div className="row">
             {/* =================login form=============== */}
@@ -19,7 +19,7 @@ const login = (): JSX.Element => {
             <LoginCover />
           </div>
         </div>
-      </div>
+      </section>
     </Fragment>
   );
 };

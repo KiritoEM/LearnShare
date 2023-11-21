@@ -1,0 +1,151 @@
+.signup {
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(90deg, #8c1eff, #5838fc);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+
+    &__container {
+        width: 32%;
+        background-color: #fff;
+        backdrop-filter: blur(50px);
+        border-radius: 15px;
+        padding: 40px 50px 50px 50px;
+
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+
+            img {
+                width: 53px;
+            }
+
+            h4 {
+                font-size: 18.5px;
+                position: relative;
+                top: 12px;
+                font-weight: bolder;
+                font-family: $paypen-font;
+                color: #740FD3;
+            }
+        }
+
+
+        .title {
+
+            h5 {
+                font-size: 24px;
+                font-weight: bold;
+                color: $color2;
+            }
+        }
+
+        .formulaire {
+            margin-top: 1.5rem;
+            width: 100%;
+
+
+            input {
+                width: 100%;
+                height: 2.8rem;
+                border-radius: 0;
+                border: 0;
+                border-bottom: 1.5px solid rgba(73, 71, 71, 0.541);
+
+                &:focus {
+                    outline: 0;
+                }
+
+
+                @include screen(small) {
+                    width: 100%;
+                    height: 2.9rem;
+                }
+
+
+                @include screen(medium) {
+                    width: 100%;
+                }
+            }
+
+            .button {
+                margin: 0 auto;
+
+                button {
+                    width: 100%;
+                    height: 3rem;
+                    font-size: 17px;
+                    color: $bg-color;
+                    font-weight: bold;
+                    border-radius: 8px;
+                    background: linear-gradient(90deg, #8c1eff, #5838fc);
+                    color: #fff;
+
+                    @include screen(small) {
+                        width: 100%;
+                        height: 2.9rem;
+                    }
+
+                    @include screen(medium) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .authGoogle {
+            margin-top: 2rem;
+            overflow: hidden;
+
+            p {
+                color: $color2;
+                font-size: 15.2px;
+                font-weight: bold;
+                text-align: center;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    margin-top: 8px;
+                    margin-left: -5rem;
+                    width: 70px;
+                    height: 3px;
+                    background-color: $color2;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    margin-top: 8px;
+                    margin-left: 0.6rem;
+                    width: 70px;
+                    height: 3px;
+                    background-color: $color2;
+                }
+            }
+
+            .btn {
+                color: $color2;
+                margin-top: 0.7rem;
+                background-color: #e5e6e2;
+                font-weight: bold;
+                padding: 10px;
+                width: 100%;
+                border-radius: 8px;
+
+                @include screen(small) {
+                    width: 100%;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+}
